@@ -273,9 +273,17 @@ svg {
   color: var(--ui-color-typography-button);
 }
 
+.ui-component-button-primary:hover {
+  background-color: rgb(0, 0, 0);
+}
+
 .ui-component-button-secondary {
   background-color: var(--ui-color-background-primary);
   color: var(--ui-color-brand);
+}
+
+.ui-component-button-secondary:hover {
+  background-color: rgb(225, 225, 225);
 }
 
 .ui-component-button-big,
@@ -326,8 +334,9 @@ div label[for=ui-component-toggle__yearly] {
 --------------------------------------------------------------*/
 
 .ui-component-card {
-  border: .0625rem solid var(--ui-color-border);
+  border: .1rem solid var(--ui-color-border);
   border-radius: var(--ui-radius-card);
+  box-shadow: 5px 5px #aeaeae;
   overflow: hidden;
   width: 100%;
 }
@@ -450,6 +459,10 @@ div label[for=ui-component-toggle__yearly] {
   text-decoration: none;
 }
 
+.ui-section-header--nav-link:hover {
+  text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 |
 | 7.2 HERO
@@ -515,6 +528,8 @@ div label[for=ui-component-toggle__yearly] {
   background-color: var(--ui-color-background-secondary);
   padding-bottom: 5rem;
   padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   text-align: center;
 }
 
@@ -790,6 +805,10 @@ div label[for=ui-component-toggle__yearly] {
   .ui-section-header--nav-link {
     font-size: var(--ui-typography-p);
     padding: 0;
+  }
+
+  .ui-section-header--nav-link:hover {
+    text-decoration: underline;
   }
 
   /*------------------------------------------------------------
