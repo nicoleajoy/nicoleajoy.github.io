@@ -1,169 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- META -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="uisual" content="Made with Uisual (uisual.com)">
-    <meta name="author" content="#">
-    <meta name="description" content="#">
-    <meta name="referrer" content="unsafe-url">
-    <meta name="robots" content="index, follow">
-    <!-- SPEED -->
-    <link rel="preconnect" href="https://res.cloudinary.com">
-    <link rel="dns-prefetch" href="https://res.cloudinary.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <!-- LINK -->
-    <link rel="me" href="#">
-    <link rel="canonical" href="#">
-    <link rel="icon" type="image/png" href="#" sizes="48x48">
-    <!-- PERFORMANCE -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="preload" as="style" href="style.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- TITLE -->
-    <title>Ajoyful Portfolio</title>
-  </head>
-  <body>
-    <header role="banner" class="ui-section-header">
-      <div class="ui-layout-container">
-        <div class="ui-section-header__layout ui-layout-flex">
-          <!-- LOGO -->
-          <a href="#" role="link" aria-label="#" class="ui-section-header--logo">
-            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40"><mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"></rect></mask><g mask="url(#mask__beam)"><rect width="36" height="36" fill="#b0a18f"></rect><rect x="0" y="0" width="36" height="36" transform="translate(0 0) rotate(324 18 18) scale(1)" fill="#fbeed3" rx="36"></rect><g transform="translate(-4 -1) rotate(4 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="black" fill="none" stroke-linecap="round"></path><rect x="10" y="14" width="1.5" height="2" rx="1" stroke="none" fill="black"></rect><rect x="24" y="14" width="1.5" height="2" rx="1" stroke="none" fill="black"></rect></g></g></svg>
-          </a>
-          <!-- HAMBURGER -->
-          <input type="checkbox" id="ui-section-header--menu-id">
-          <label for="ui-section-header--menu-id" class="ui-section-header--menu-icon"></label>
-          <!-- MENU -->
-          <nav role="navigation" class="ui-section-header--nav ui-layout-flex">
-            <a href="#about" role="link" aria-label="#" class="ui-section-header--nav-link">About</a>
-            <a href="#projects" role="link" aria-label="#" class="ui-section-header--nav-link">Projects</a>
-            <a href="#contact" role="link" aria-label="#" class="ui-section-header--nav-link">Contact</a>
-          </nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ajoyful Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Folio - v4.3.0
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo"><svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40"><mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"></rect></mask><g mask="url(#mask__beam)"><rect width="36" height="36" fill="#b0a18f"></rect><rect x="0" y="0" width="36" height="36" transform="translate(0 0) rotate(324 18 18) scale(1)" fill="#fbeed3" rx="36"></rect><g transform="translate(-4 -1) rotate(4 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="black" fill="none" stroke-linecap="round"></path><rect x="10" y="14" width="1.5" height="2" rx="1" stroke="none" fill="black"></rect><rect x="24" y="14" width="1.5" height="2" rx="1" stroke="none" fill="black"></rect></g></g></svg></a>
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="typed" data-typed-items="Nicole Ajoy., a Developer., a Designer."></span></h1>
+        <p>Developer & Designer</p>
+        <ul class="list-unstyled list-social">
+          <li><a href="mailto:ajoynicole@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
+          <li><a href="https://linkedin.com/in/nicoleajoy"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://github.com/nicoleajoy"><i class="bi bi-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="./assets/img/me.png" loading="lazy" alt="me" class="img-responsive">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+
+              <p class="p-heading">I graduated from the University of Florida in May 2021 with a Bachelor of Science in Digital Art and Computer Science.</p>
+              <p class="separator">There, I worked as a teaching assistant for an introductory programming course, and 3D modeler & UX researcher for a VR project. I’m currently looking for an entry-level position in Development or UI/UX Design.</p>
+
+            </div>
+
+          </div>
         </div>
       </div>
-    </header>
-    <main role="main">
-      <section class="ui-section-hero">
-        <div class="ui-layout-container">
-          <div class="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
-            <!-- COPYWRITING -->
-            <div>
-              <h1 id="about">Hi, I'm <u>Nicole</u>.</h1>
-              <p class="ui-text-intro">I graduated from the University of Florida in May 2021 with a <b>B.S. in Digital Art & Computer Science</b>. There, I worked as a teaching assistant for an introductory programming course, and 3D modeler & UX researcher for a VR project. I’m currently looking for a entry-level position in Full-Stack Development or UX/UI Design.</p>
-            </div>
-            <!-- IMAGE -->
-            <img src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Black&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Twinkle&skinColor=Light" loading="lazy" alt="#" class="ui-image-half-right">
-            <p></p>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-code-slash"></i>
+                <span>01. PROGRAMMING</span>
+                <p class="separator">Experience with Java, C++, HTML, CSS, JavaScript (P5.js, React.js).</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-eyeglasses"></i>
+                <span>02. UI/UX DESIGN</span>
+                <p class="separator">Experience with Figma, Wireframing, Persona, and User Stories.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-controller"></i>
+                <span>03. GAME DEVELOPMENT</span>
+                <p class="separator">Created two 2D Platformers, one Sandbox, and one 3D game in Unity.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-brush"></i>
+                <span>04. 3D RENDERING</span>
+                <p class="separator">Worked on over fifty models and five animations in Blender.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-emoji-smile"></i>
+                <span>05. MISC</span>
+                <p class="separator">Fluent in Spanish and English. Loves reading and constantly learning.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </section>
-      <section class="ui-section-testimonial">
-        <p>"As a creator, I enjoy taking raw ideas and making them come to life through code and design."</p>
-      </section>
-      <section class="ui-section-feature">
-        <div class="ui-layout-container">
-          <h2 id="projects">Projects</h2>
-          <!-- PART ONE -->
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-3">
-            <div class="ui-component-card ui-component-card--feature">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/notification.png" alt="#" loading="lazy">
-              <div class="ui-component-card--feature-content">
-                <h4 class="ui-component-card--feature-title">Activist Agenda (Web App)</h4>
-                <p>A safe space to post protests. Made with React and HTML/CSS.</p>
-                <a href="https://activist-agenda.herokuapp.com/" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">See Project</a>
-              </div>
-            </div>
-            <div class="ui-component-card ui-component-card--feature">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/notification.png" alt="#" loading="lazy">
-              <div class="ui-component-card--feature-content">
-                <h4 class="ui-component-card--feature-title">Curbside Pickup (Mobile App UI)</h4>
-                <p>Enhance the pickup experience. Made with Figma.</p>
-                <a href="https://www.figma.com/proto/dydqDNcSCZd5ENP9B2xlmF/UXD-Client-Project?node-id=267%3A830&scaling=min-zoom" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">See Project</a>
-              </div>
-            </div>
-            <div class="ui-component-card ui-component-card--feature">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/notification.png" alt="#" loading="lazy">
-              <div class="ui-component-card--feature-content">
-                <h4 class="ui-component-card--feature-title">Cursor Types (Human-Computer Interaction)</h4>
-                <p>Target acquisition with different cursors. Made with p5.js.</p>
-                <a href="https://editor.p5js.org/nicoleajoy/collections/SXGcth4qq" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">See Project</a>
-              </div>
-            </div>
-          </div>
-          <br/>
-          <!-- PART TWO -->
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-3">
-            <div class="ui-component-card ui-component-card--feature">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/notification.png" alt="#" loading="lazy">
-              <div class="ui-component-card--feature-content">
-                <h4 class="ui-component-card--feature-title">CG Robot Arm</h4>
-                <p>An interactive 3D model made with OpenGL and C++.</p>
-                <a href="https://github.com/nicoleajoy/CG-Robot-Arm" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">See Project</a>
-              </div>
-            </div>
-            <div class="ui-component-card ui-component-card--feature">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/notification.png" alt="#" loading="lazy">
-              <div class="ui-component-card--feature-content">
-                <h4 class="ui-component-card--feature-title">Pascal with Antlr</h4>
-                <p>A grammar, parser, and interpreter for Pascal.</p>
-                <a href="https://github.com/nicoleajoy/Pascal-with-Antlr" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">See Project</a>
-              </div>
-            </div>
-            <div class="ui-component-card ui-component-card--feature">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/graphics/notification.png" alt="#" loading="lazy">
-              <div class="ui-component-card--feature-content">
-                <h4 class="ui-component-card--feature-title">Sushi Rush</h4>
-                <p>Fruit Ninja spin-off. Made with Java and Processing.</p>
-                <a href="https://github.com/nicoleajoy/Sushi-Rush" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">See Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="ui-section-close">
-        <div class="ui-layout-container">
-          <div class="ui-section-close__layout ui-layout-flex">
-            <div>
-              <h2 id="contact">Contact</h2>
-              <p class="ui-text-intro">Working on an exciting project?<br/>My emailbox is always open.</p>
-            </div>
-            <!-- CTA -->
-            <div class="ui-component-cta ui-layout-flex">
-              <a href="mailto: ajoynicole@gmail.com" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Send Email</a>
-              <p class="ui-text-note"><small>I promise, it won't bite.</small></p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer role="contentinfo" class="ui-section-footer">
-      <div class="ui-layout-container">
-        <div class="ui-section-footer__layout ui-layout-flex">
-          <!-- COPYRIGHT -->
-          <p class="ui-section-footer--copyright ui-text-note"><small>Made with ❤︎ (and code).</small></p>
-          <!-- MENU -->
-          <a href="mailto: ajoynicole@gmail.com" role="link" aria-label="#">
-            <svg viewBox="0 0 24 24" height="16" width="16" fill="#AEAEAE" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" role="img" aria-label="#">
-              <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
-            </svg>
-          </a>
-          <a href="https://linkedin.com/nicoleajoy/" role="link" aria-label="#">
-            <svg viewBox="0 -1 28 28" height="16" width="16" fill="#AEAEAE" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" role="img" aria-label="#">
-              <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-            </svg>
-          </a>
-          <a href="https://github.com/nicoleajoy/" role="link" aria-label="#">
-            <svg viewBox="-1 -1 26 26" height="16" width="16" fill="#AEAEAE" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" role="img" aria-label="#">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-          </a>
+
+      </div>
+
+    </div><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Portfolio</h2>
         </div>
       </div>
-    </footer>
-  </body>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-code">Code</li>
+              <li data-filter=".filter-uiux">UI/UX</li>
+              <li data-filter=".filter-games">Games</li>
+              <li data-filter=".filter-renders">3D Renders</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-code">
+            <img src="assets/img/portfolio/PascalInterpreter.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Pascal Interpreter</h4>
+              <p>Interpreter, parser, and lexer.</p>
+              <a href="https://github.com/nicoleajoy/Pascal-with-Antlr" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-renders">
+            <img src="assets/img/portfolio/Walkcycle.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Walkcycle Animation</h4>
+              <p>Isabelle's three walkcycles.</p>
+              <a href="https://youtu.be/HbxUPdlJzmk" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-renders">
+            <img src="assets/img/portfolio/AnimShort.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Animation Short</h4>
+              <p>Remember, you are not alone.</p>
+              <a href="https://youtu.be/Q1a08rUZCbA" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-code">
+            <img src="assets/img/portfolio/PrologTypeInf.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Prolog Type Inference</h4>
+              <p>Written with Haskell.</p>
+              <a href="https://github.com/nicoleajoy/Prolog-Type-Inference" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-code filter-games">
+            <img src="assets/img/portfolio/SushiRush.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Fruit Ninja Spin-Off</h4>
+              <p>Written with Processing (Java).</p>
+              <a href="https://github.com/nicoleajoy/Sushi-Rush" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-code filter-uiux">
+            <img src="assets/img/portfolio/ActivistAgenda.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Activist Agenda Web-App</h4>
+              <p>Written with HTML, CSS, and JS.</p>
+              <a href="https://activist-agenda.herokuapp.com" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-code filter-uiux">
+            <img src="assets/img/portfolio/CursorVariations.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>HCI Mouse Variations</h4>
+              <p>Written with JavaScript (P5.js).</p>
+              <a href="https://editor.p5js.org/nicoleajoy/collections/SXGcth4qq" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
+            <img src="assets/img/portfolio/Hiraeth.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Adventure Platformer</h4>
+              <p>Trip up a mountain.</p>
+              <a href="https://drive.google.com/file/d/1PO5_9vMXiBYMCY9mDitqNwMbxDD5GQiq/view?usp=sharing" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-uiux">
+            <img src="assets/img/portfolio/CurbsidePickup.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Curbside Pickup App UI/UX</h4>
+              <p>Made with Figma.</p>
+              <a href="https://www.figma.com/proto/dydqDNcSCZd5ENP9B2xlmF/UXD-Client-Project?node-id=62%3A8230&scaling=scale-down" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-code">
+            <img src="assets/img/portfolio/RobotArm.gif" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>CG Robot Arm</h4>
+              <p>Written with C++ (OpenGL).</p>
+              <a href="https://github.com/nicoleajoy/CG-Robot-Arm" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
+            <img src="assets/img/portfolio/RevengeRoomba.gif" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>3D Sandbox Game</h4>
+              <p>Roomba wants his revenge.</p>
+              <a href="https://www.behance.net/gallery/117261127/Revenge-of-the-Roomba" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection text-center">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row" >
+              <div class="contact-contact" >
+                <h2 class="mb-30">CONTACT</h2>
+                <ul class="contact-details">
+                  <li><span>Florida, United States</span></li>
+                  <li><span>(+1) 904.806.2383</span></li>
+                  <li><span><a href="mailto:ajoynicole@gmail.com">ajoynicole@gmail.com</a></span></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="mailto:ajoynicole@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
+          <li><a href="https://linkedin.com/in/nicoleajoy"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="https://github.com/nicoleajoy"><i class="bi bi-github"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights Folio. All rights reserved.</p>
+
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
