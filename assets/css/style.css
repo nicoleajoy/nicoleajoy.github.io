@@ -11,7 +11,7 @@
 body {
   background: #ffffff;
   color: #898989;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -198,7 +198,7 @@ p {
   line-height: 1;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
   font-style: italic;
 }
 
@@ -243,7 +243,7 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 14px;
   font-weight: 500;
   color: #7e7d7d;
@@ -554,7 +554,7 @@ p {
 }
 
 #about .about-descr .p-heading {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 28px;
   text-align: left;
 }
@@ -850,51 +850,6 @@ p {
 
 #contact textarea {
   min-height: 160px;
-}
-
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
 }
 
 @-webkit-keyframes animate-loading {
