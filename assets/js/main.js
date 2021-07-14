@@ -236,13 +236,6 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
