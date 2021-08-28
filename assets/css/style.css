@@ -37,6 +37,10 @@ h4 {
   font-weight: 600;
 }
 
+hr {
+  margin: 25px 0px;
+}
+
 a {
   color: #292929;
   text-decoration: underline !important;
@@ -686,7 +690,7 @@ p {
   position: absolute;
   right: 40px;
   font-size: 24px;
-  top: calc(50% - 18px);
+  top: calc(50% + 2px);
   color: #e0ac8c;
 }
 
