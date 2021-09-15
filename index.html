@@ -68,7 +68,11 @@
     <div class="container">
       <div class="hero-content">
         <h1>Nicole Ajoy</h1>
-        <p>> <span class="typed" data-typed-items="GREETING: Hello! (^_^)丿 | ABOUT: developer + designer | LIKES: reading + drawing"></span></p>
+        <p>> <span class="typed" data-typed-items=
+          "GREETING: Hello! :-)
+          |ABOUT: developer + designer 
+          |LIKES: reading + drawing"></span>
+        </p>
         <ul class="list-unstyled list-social">
           <li><a href="mailto:ajoynicole@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
           <li><a href="https://linkedin.com/in/nicoleajoy"><i class="bi bi-linkedin"></i></a></li>
@@ -88,7 +92,7 @@
           <div class="col-lg-4 ">
             <div class="div-img-bg">
               <div class="about-img">
-                <img src="./assets/img/me.png" loading="lazy" alt="me" class="img-responsive">
+                <img src="./assets/img/me.png" loading="lazy" alt="me" class="img-responsive" id="img-me" draggable="false">
               </div>
             </div>
           </div>
@@ -96,8 +100,12 @@
           <div class="col-lg-7">
             <div class="about-descr">
 
-              <p class="p-heading">I graduated from the University of Florida in May 2021 with a Bachelor of Science in Digital Art.</p>
-              <p class="separator">There, I worked as a teaching assistant for an introductory programming course and UX researcher for a VR project. I’m currently looking for a position in Software Engineering, UI/UX Design, or Game Development.</p>
+              <p class="p-heading">About Me</p>
+              <p class="separator">
+                I graduated from the University of Florida in May 2021 with a <b>Bachelor of Science in Digital Art</b>. 
+                There, I worked as a teaching assistant for an introductory programming course and UX researcher for a VR project. 
+                I’m currently looking for a position in Software Engineering, UI/UX Design, or Game Development.
+              </p>
 
             </div>
           </div>
@@ -190,7 +198,7 @@
             <div class="portfolio-info">
               <h4>Pascal Interpreter</h4>
               <p>Pascal, Antlr</p>
-              <a href="https://github.com/nicoleajoy/Pascal-with-Antlr" class="details-link" title="GitHub"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" alt="hello" onclick=" window.open('https://github.com/nicoleajoy/Pascal-with-Antlr','_blank')">GitHub</button>
             </div>
           </div>
 
@@ -199,7 +207,7 @@
             <div class="portfolio-info">
               <h4>Walkcycle Animation</h4>
               <p>Blender</p>
-              <a href="https://youtu.be/HbxUPdlJzmk" class="details-link" title="YouTube"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://youtu.be/HbxUPdlJzmk','_blank')">YouTube</button>
             </div>
           </div>
 
@@ -208,7 +216,7 @@
             <div class="portfolio-info">
               <h4>Animation Short</h4>
               <p>Blender</p>
-              <a href="https://youtu.be/Q1a08rUZCbA" class="details-link" title="YouTube"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://youtu.be/Q1a08rUZCbA','_blank')">YouTube</button>
             </div>
           </div>
 
@@ -217,7 +225,7 @@
             <div class="portfolio-info">
               <h4>Prolog Type Inference</h4>
               <p>Prolog, Haskell</p>
-              <a href="https://github.com/nicoleajoy/Prolog-Type-Inference" class="details-link" title="GitHub"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://github.com/nicoleajoy/Prolog-Type-Inference','_blank')">GitHub</button>
             </div>
           </div>
 
@@ -226,7 +234,7 @@
             <div class="portfolio-info">
               <h4>Fruit Ninja Spin-Off</h4>
               <p>Java (Processing)</p>
-              <a href="https://github.com/nicoleajoy/Sushi-Rush" class="details-link" title="GitHub"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://github.com/nicoleajoy/Sushi-Rush','_blank')">GitHub</button>
             </div>
           </div>
 
@@ -235,7 +243,7 @@
             <div class="portfolio-info">
               <h4>Protester Web-App</h4>
               <p>JavaScript (React), HTML, CSS</p>
-              <a href="https://activist-agenda.herokuapp.com" class="details-link" title="Web App"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://activist-agenda.herokuapp.com','_blank')">Web-App</button>
             </div>
           </div>
 
@@ -244,7 +252,7 @@
             <div class="portfolio-info">
               <h4>HCI Mouse Variations</h4>
               <p>JavaScript (P5)</p>
-              <a href="https://editor.p5js.org/nicoleajoy/collections/SXGcth4qq" class="details-link" title="P5 Editor"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://editor.p5js.org/nicoleajoy/collections/SXGcth4qq','_blank')">P5 Editor</button>
             </div>
           </div>
 
@@ -253,7 +261,7 @@
             <div class="portfolio-info">
               <h4>Adventure 2D Platformer</h4>
               <p>Unity (C#)</p>
-              <a href="https://drive.google.com/file/d/1tPHP85-7Z5RDVdpvWyGNP2WtZwc4O3qp/view?usp=sharing" class="details-link" title="Game Design Document"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://drive.google.com/file/d/1tPHP85-7Z5RDVdpvWyGNP2WtZwc4O3qp/view?usp=sharing','_blank')">Game Document</button>
             </div>
           </div>
 
@@ -262,7 +270,7 @@
             <div class="portfolio-info">
               <h4>Curbside Pickup Mobile UI</h4>
               <p>Figma</p>
-              <a href="https://www.figma.com/proto/dydqDNcSCZd5ENP9B2xlmF/UXD-Client-Project?node-id=62%3A8230&scaling=scale-down" class="details-link" title="Interactive Prototype"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://www.figma.com/proto/dydqDNcSCZd5ENP9B2xlmF/UXD-Client-Project?node-id=62%3A8230&scaling=scale-down','_blank')">Interactive Prototype</button>
             </div>
           </div>
 
@@ -271,7 +279,7 @@
             <div class="portfolio-info">
               <h4>CG Robot Arm</h4>
               <p>C++ (OpenGL)</p>
-              <a href="https://github.com/nicoleajoy/CG-Robot-Arm" class="details-link" title="GitHub"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://github.com/nicoleajoy/CG-Robot-Arm','_blank')">GitHub</button>
             </div>
           </div>
 
@@ -280,7 +288,7 @@
             <div class="portfolio-info">
               <h4>3D Sandbox Game</h4>
               <p>Unity (C#)</p>
-              <a href="https://www.behance.net/gallery/117261127/Revenge-of-the-Roomba" class="details-link" title="Behance"><i class="bi bi-chevron-double-right"></i></a>
+              <button id="portfolio-button" onclick=" window.open('https://www.behance.net/gallery/117261127/Revenge-of-the-Roomba','_blank')">Behance</button>
             </div>
           </div>
 
@@ -297,7 +305,7 @@
           <div class="row" >
               <div class="contact-contact">
                 <h2 class="mb-30">CONTACT</h2>
-                <p>You've read about me!<br>Now, I'd like to hear from you.</p>
+                <p>You've read about me. But I'd like to hear from you!</p>
                 <ul class="contact-details">
                   <li><span><a href="mailto:ajoynicole@gmail.com">ajoynicole@gmail.com</a></span></li>
                 </ul>
@@ -331,7 +339,7 @@
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
       -->
-        &copy; Folio (<a href="https://bootstrapmade.com/">BootstrapMade</i></a>) | Made with <i class="bi bi-heart-fill"></i>
+        &copy; Folio (<a href="https://bootstrapmade.com/">BootstrapMade</i></a>) | Made with <i class="bi bi-heart-fill" id="made-with-heart"></i>
       </div>
 
     </div>
