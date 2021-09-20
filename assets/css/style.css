@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #ffffff;
+  background: #F5ECDA;
   color: #898989;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -186,9 +186,9 @@ p {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color: #fff;
+  background-color: #F5ECDA;
   top: -100%;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08); */
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -252,7 +252,7 @@ p {
   font-weight: 500;
   color: #7e7d7d;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .navbar a i, .navbar a:focus i {
@@ -277,7 +277,7 @@ p {
   visibility: hidden;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .navbar .dropdown ul li {
@@ -470,8 +470,13 @@ p {
 }
 
 .hero-content .list-social li i {
-  color: #F36200;
+  color: #6c757d;
   font-size: 15px;
+  transition: color 0.5s;
+}
+
+.hero-content .list-social li i:hover {
+  color: #F36200;
 }
 
 /*--------------------------------------------------------------
@@ -539,7 +544,7 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #fff;
+  background: white;
   padding-top: 120px;
 }
 
@@ -573,7 +578,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #fff;
+  background: white;
   position: relative;
   padding-bottom: 80px;
 }
@@ -624,7 +629,7 @@ p {
 #portfolio {
   position: relative;
   padding-bottom: 50px;
-  background: #F5ECDA;
+  background: #fdfaf6;
 }
 
 #portfolio #portfolio-flters {
@@ -669,16 +674,16 @@ p {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   padding: 15px;
   text-align: center;
+  border-radius: 1%;
 }
 
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   color: #666;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-info p {
@@ -1037,7 +1042,7 @@ blockquote {
 
 #footer .socials-media ul li a {
   font-size: 24px;
-  color: #F36200;
+  color: #6c757d;
   letter-spacing: 0.1em;
   font-weight: 500;
   background: transparent;
@@ -1425,8 +1430,8 @@ blockquote {
 # Mine
 --------------------------------------------------------------*/
 #img-me {
-  border-radius: 4px;
-  opacity: 20%;
+  border-radius: 1%;
+  background-color: lightsteelblue;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -1434,10 +1439,50 @@ blockquote {
   user-select: none;
 }
 
+#resume-button {
+  display: block;
+  padding: 8px;
+  margin-top: 20px;
+  background-color: white;
+  border: solid 2px #F36200;
+  color: #F36200;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color;
+  transition-duration: 1s, 0.5s;
+}
+
+#resume-button:hover {
+  background-color: #F36200;
+  color: white;
+}
+
+#contact-button {
+  display: block;
+  padding: 8px;
+  margin: 0px auto;
+  background-color: white;
+  border: solid 2px #F36200;
+  color: #F36200;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color;
+  transition-duration: 1s, 0.5s;
+}
+
+#contact-button:hover {
+  background-color: #F36200;
+  color: white;
+}
+
 #portfolio-button {
   padding: 5px;
   margin-top: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
   border: solid 2px #F36200;
   color: #F36200;
   text-align: center;
@@ -1453,6 +1498,20 @@ blockquote {
   color: white;
 }
 
-#made-with-heart {
+#heart {
   color: #F36200;
+  display: inline-block;
+  height: 50px;
+  margin: 0 5px;
+  position: relative;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.125) translateY(1px);
+  }
 }

@@ -45,7 +45,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40"><mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"></rect></mask><g mask="url(#mask__beam)"><rect width="36" height="36" fill="#b0a18f"></rect><rect x="0" y="0" width="36" height="36" transform="translate(0 0) rotate(324 18 18) scale(1)" fill="#fbeed3" rx="36"></rect><g transform="translate(-4 -1) rotate(4 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="black" fill="none" stroke-linecap="round"></path><rect x="10" y="14" width="1.5" height="2" rx="1" stroke="none" fill="black"></rect><rect x="24" y="14" width="1.5" height="2" rx="1" stroke="none" fill="black"></rect></g></g></svg></a>
+      <a href="index.html" class="logo"><svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40"><mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36"><rect width="36" height="36" rx="72" fill="white"></rect></mask><g mask="url(#mask__beam)"><rect width="36" height="36" fill="#b0a18f"></rect><rect x="0" y="0" width="36" height="36" transform="translate(0 0) rotate(324 18 18) scale(1)" fill="#f0e1c4" rx="36"></rect><g transform="translate(-4 -1) rotate(4 18 18)"><path d="M15 19c2 1 4 1 6 0" stroke="black" fill="none" stroke-linecap="round"></path><rect x="10" y="14" width="1.5" height="2" rx="1" stroke="none" fill="black"></rect><rect x="24" y="14" width="1.5" height="2" rx="1" stroke="none" fill="black"></rect></g></g></svg></a>
       <!-- Uncomment below if you prefer to use an text logo -->
       <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
 
@@ -102,9 +102,10 @@
 
               <p class="p-heading">About Me</p>
               <p class="separator">
-                I graduated from the University of Florida in May 2021 with a <b>Bachelor of Science in Digital Art</b>. 
+                I graduated from the University of Florida in May 2021 with a Bachelor of Science in Digital Art. 
                 There, I worked as a teaching assistant for an introductory programming course and UX researcher for a VR project. 
-                I’m currently looking for a position in Software Engineering, UI/UX Design, or Game Development.
+                I’m currently looking for an entry-level position in Software Engineering, UI/UX Design, or Game Development.
+                <button id="resume-button" onclick=" window.open('https://my.indeed.com/api/3/profile/files/resume/mostRecent','_blank')">Download Resume</button>
               </p>
 
             </div>
@@ -306,9 +307,12 @@
               <div class="contact-contact">
                 <h2 class="mb-30">CONTACT</h2>
                 <p>You've read about me. But I'd like to hear from you!</p>
+                <!--
                 <ul class="contact-details">
                   <li><span><a href="mailto:ajoynicole@gmail.com">ajoynicole@gmail.com</a></span></li>
                 </ul>
+                -->
+                <button id="contact-button" onclick="location.href='mailto:ajoynicole@gmail.com';">Send Message</button>
               </div>
           </div>
         </div>
@@ -339,7 +343,7 @@
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
       -->
-        &copy; Folio (<a href="https://bootstrapmade.com/">BootstrapMade</i></a>) | Made with <i class="bi bi-heart-fill" id="made-with-heart"></i>
+        Made with <i class="bi bi-heart-fill" id="heart"></i> by <a href="https://bootstrapmade.com/">Folio</a>
       </div>
 
     </div>
