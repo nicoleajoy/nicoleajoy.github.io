@@ -167,10 +167,10 @@
     typed_strings = typed_strings.split('|')
     new Typed('.typed', {
       strings: typed_strings,
-      loop: true,
-      typeSpeed: 75,
-      backSpeed: 25,
-      backDelay: 2000
+      loop: false,
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 3000
     });
   }
 
