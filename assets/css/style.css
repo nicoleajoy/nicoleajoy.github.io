@@ -674,7 +674,8 @@ p {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgb(255, 255, 255, 0.95);
+  border-top: 4px solid #7582DD;
   padding: 15px;
   text-align: center;
   border-radius: 1%;
@@ -702,7 +703,7 @@ p {
 }
 
 #portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #cab89f;
+  color: #9fa7ca;
 }
 
 #portfolio .portfolio-item .portfolio-info .details-link {
@@ -1429,6 +1430,10 @@ blockquote {
 /*--------------------------------------------------------------
 # Mine
 --------------------------------------------------------------*/
+.code {
+  font-family: 'Roboto Mono', monospace;
+}
+
 #img-me {
   border-radius: 1%;
   background-color: lightsteelblue;
