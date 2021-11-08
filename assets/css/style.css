@@ -1453,7 +1453,7 @@ blockquote {
   text-decoration: none;
   border-radius: 4px;
   transition: background-color transform;
-  transition-duration: 1s, 0.25s;
+  transition-duration: 0.2s, 0.25s;
   box-shadow: 0px 4px #a5aef1;
 }
 
@@ -1501,19 +1501,5 @@ blockquote {
   }
   50% {
     transform: scale(1.125) translateY(2px);
-  }
-}
-
-#wave {
-  display: inline-block;
-  animation: wave 0.75s infinite;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(10deg);
   }
 }
