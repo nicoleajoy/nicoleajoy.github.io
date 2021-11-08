@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #F5ECDA;
+  background: #F6F9FC;
   color: #898989;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -49,7 +49,7 @@ a {
 
 a:hover {
   transition: all 0.25s ease-in-out 0s;
-  color: #F36200;
+  color: #7582DD;
 }
 
 p {
@@ -61,12 +61,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #F36200;
+  background: #7582DD;
   color: #fff;
 }
 
 ::selection {
-  background: #F36200;
+  background: #7582DD;
   color: #fff;
 }
 
@@ -135,7 +135,7 @@ p {
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #F36200;
+  background: #7582DD;
 }
 
 .mb-30 {
@@ -170,7 +170,7 @@ p {
 }
 
 .back-to-top:hover {
-  background: #F36200;
+  background: #7582DD;
   color: #fff;
 }
 
@@ -186,7 +186,7 @@ p {
   transition: all 0.25s;
   z-index: 997;
   padding: 15px 0;
-  background-color: #F5ECDA;
+  background-color: #F6F9FC;
   top: -100%;
   /* box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08); */
 }
@@ -262,7 +262,7 @@ p {
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #F36200;
+  color: #7582DD;
 }
 
 .navbar .dropdown ul {
@@ -294,7 +294,7 @@ p {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #F36200;
+  color: #7582DD;
 }
 
 .navbar .dropdown:hover > ul {
@@ -388,7 +388,7 @@ p {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #F36200;
+  color: #7582DD;
 }
 
 .navbar-mobile .getstarted {
@@ -420,7 +420,7 @@ p {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #F36200;
+  color: #7582DD;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -431,8 +431,8 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  /* background: linear-gradient(63deg, #F5ECDA 50%, #F36200 100%) repeat scroll center center/cover; */
-  background: #F5ECDA;
+  /* background: linear-gradient(63deg, #F6F9FC 50%, #7582DD 100%) repeat scroll center center/cover; */
+  background: #F6F9FC;
   height: 100vh;
   width: 100%;
 }
@@ -451,7 +451,7 @@ p {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #F36200;
+  color: #7582DD;
 }
 
 .hero-content p {
@@ -475,7 +475,7 @@ p {
 }
 
 .hero-content .list-social li i:hover {
-  color: #F36200;
+  color: #7582DD;
 }
 
 /*--------------------------------------------------------------
@@ -543,13 +543,13 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #fdfaf6;
+  background: white;
   padding-top: 120px;
 }
 
 #about .div-img-bg {
   border-radius: 20px;
-  background: #fdfaf6;
+  background: white;
 }
 
 #about .div-img-bg .about-img img {
@@ -578,7 +578,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #fdfaf6;
+  background: white;
   position: relative;
   padding-bottom: 80px;
 }
@@ -602,7 +602,7 @@ p {
 
 .services-block i {
   font-size: 44px;
-  color: #F36200;
+  color: #7582DD;
   line-height: 44px;
 }
 
@@ -616,11 +616,11 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #F36200;
+  border: 1px solid #7582DD;
 }
 
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #F36200;
+  background-color: #7582DD;
 }
 
 /*--------------------------------------------------------------
@@ -629,7 +629,7 @@ p {
 #portfolio {
   position: relative;
   padding-bottom: 50px;
-  background: white;
+  background: #F6F9FC;
 }
 
 #portfolio #portfolio-flters {
@@ -655,7 +655,7 @@ p {
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #F36200;
+  color: #7582DD;
 }
 
 #portfolio #portfolio-flters li:last-child {
@@ -698,7 +698,7 @@ p {
   right: 40px;
   font-size: 24px;
   top: calc(50% + 2px);
-  color: #F36200;
+  color: #7582DD;
 }
 
 #portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
@@ -735,11 +735,11 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #F36200;
+  border: 1px solid #7582DD;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #F36200;
+  background-color: #7582DD;
 }
 
 .portfolio-details .portfolio-info {
@@ -825,7 +825,7 @@ p {
 }
 
 .journal-block .journal-info .journal-txt h4 a:hover {
-  color: #F36200;
+  color: #7582DD;
   transition: all 0.25s ease-in-out 0s;
 }
 
@@ -841,7 +841,7 @@ p {
 #contact {
   height: auto;
   width: 100%;
-  background-color: #fdfaf6;
+  background-color: white;
 }
 
 .contact-details {
@@ -928,7 +928,7 @@ p {
 }
 
 .journal-txt h4 a:hover {
-  color: #F36200;
+  color: #7582DD;
   transition: all 0.25s ease-in-out 0s;
 }
 
@@ -1012,14 +1012,14 @@ blockquote {
   background-color: #f2f2f2;
   margin: 30px 0;
   border: none;
-  border-left: 4px solid #F36200;
+  border-left: 4px solid #7582DD;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #F5ECDA;
+  background: #F6F9FC;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1051,7 +1051,7 @@ blockquote {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #F36200;
+  color: #7582DD;
   transition: all 0.25s ease-in-out 0s;
 }
 
@@ -1442,25 +1442,25 @@ blockquote {
 #resume-button, #contact-button, #portfolio-button {
   display: block;
   background-color: rgba(255,255,255,0);
-  border: solid 2px #F36200;
-  color: #F36200;
+  border: solid 2px #7582DD;
+  color: #7582DD;
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color transform;
   transition-duration: 1s, 0.25s;
-  box-shadow: 0px 4px #ffbe92;
+  box-shadow: 0px 4px #a5aef1;
 }
 
 #resume-button:hover, #contact-button:hover, #portfolio-button:hover {
-  background-color: #F36200;
+  background-color: #7582DD;
   color: white
 }
 
 #resume-button:active, #contact-button:active, #portfolio-button:active {
-  background-color: #F36200;
-  box-shadow: 0 0px #ffbe92;
-  transform: translateY(4px);
+  background-color: #7582DD;
+  box-shadow: 0 0px #a5aef1;
+  transform: translateY(6px);
 }
 
 #resume-button {
@@ -1482,7 +1482,7 @@ blockquote {
 }
 
 #heart {
-  color: #F36200;
+  color: #7582DD;
   display: inline-block;
   height: 50px;
   margin: 0 5px;
