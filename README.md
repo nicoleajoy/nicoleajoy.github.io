@@ -4,4 +4,4 @@ Showcases some personal projects.
 
 ## Credits
 
-Template by [Folio](https://bootstrapmade.com).
+Template: [Folio from BootstrapMade](https://bootstrapmade.com)
