@@ -1453,7 +1453,7 @@ blockquote {
   text-decoration: none;
   border-radius: 4px;
   transition: background-color transform;
-  transition-duration: 0.2s, 0.25s;
+  transition-duration: 0.15s, 0.15s;
   box-shadow: 0px 4px #a5aef1;
 }
 
