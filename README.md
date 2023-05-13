@@ -1,7 +1,2 @@
-# Personal Portfolio Website
+# Personal Website
 
-Showcases some personal projects.
-
-## Credits
-
-Template: [Folio from BootstrapMade](https://bootstrapmade.com)
