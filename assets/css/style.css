@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* ----------------------------------------------- */
@@ -11,6 +11,11 @@
     --section-title-text: black;
     --subtext: #AA8878;
     --hovered-text: white;
+    --fontSizes-xs: 0.75rem;
+    --fontSizes-sm: 0.875rem;
+    --fontSizes-md: 1rem;
+    --fontSizes-lg: 1.125rem;
+    --fontSizes-xl: 1.25rem;
 }
 
 /* ------------------ GENERAL ------------------ */
@@ -23,22 +28,32 @@ body {
     color: var(--content-text);
     background-color: var(--background);
     cursor: default;
+    padding: 5em 0 2em 0;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 div#wrapper {
-    margin: 10% 20% 5% 20%;
+    margin:auto;
+    width: 56rem;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-p {
-    margin: 0;
-}
-
 hr {
-    border: 1px solid var(--content-text);
+    border: 1px dashed var(--content-text);
 }
 
 code {
@@ -51,7 +66,7 @@ code {
 /* ------------------ SECTION ------------------ */
 
 div#content div.section {
-    padding: 2rem 0;
+    padding: 2em 0;
 }
 
 /* ------------------ HEADER ------------------ */
@@ -86,7 +101,7 @@ a:focus {
     color: var(--accent);
     cursor: pointer !important;
     transition: 0.25s;
-    text-decoration: underline dashed;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -100,6 +115,7 @@ a:hover {
 
 @media only screen and (max-width: 1080px) {
     div#wrapper {
-        margin: 2em;
+        padding: 1em;
+        width: 100%;
     }
 }
