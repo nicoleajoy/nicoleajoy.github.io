@@ -44,7 +44,7 @@ body {
 }
 
 div#wrapper {
-    margin:auto;
+    margin: auto;
     width: 56rem;
 }
 
@@ -87,11 +87,43 @@ div#header accent {
 }
 
 div#header div#summary {
-    font-size: 21px;
+    font-size: 20px;
 }
 
 div#header div#summary b {
     font-weight: 700;
+}
+
+/* ------------------ PROJECTS ------------------ */
+
+div#grid-projects {
+    display: grid;
+    grid-template-areas: "header content";
+    grid-template-columns: 2fr 3fr;
+}
+
+div#grid-projects>#grid-header {
+    grid-area: header;
+}
+
+div#grid-projects>#grid-content {
+    grid-area: content;
+}
+
+/* ------------------ FAVORITES ------------------ */
+
+div#grid-favorites {
+    display: grid;
+    grid-template-areas: "header content";
+    grid-template-columns: 2fr 3fr;
+}
+
+div#grid-favorites#grid-header {
+    grid-area: header;
+}
+
+div#grid-favorites#grid-content {
+    grid-area: content;
 }
 
 /* ------------------ FOOTER ------------------ */
