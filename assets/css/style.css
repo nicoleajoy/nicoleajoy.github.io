@@ -104,16 +104,8 @@ div#header div#summary b {
 .row {  
     margin: auto;
     display: flex;
-    flex: 100%;
-    gap: 2px;
-}
-
-.side {
-    flex: 30%;
-}
-
-.main {
-    flex: 70%;
+    flex-direction: row;
+    gap: 10vw;
 }
 
 /* ------------------ SKILLS ------------------ */
@@ -147,18 +139,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 720px) {
-    div#grid-projects {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "content";
-    }
-
-    div#grid-projects>#grid-header {
-        grid-area: header;
-    }
-
-    div#grid-projects>#grid-content {
-        grid-area: content;
+    .row {  
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
 }
