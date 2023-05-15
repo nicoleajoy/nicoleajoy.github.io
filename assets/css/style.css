@@ -5,12 +5,13 @@
 
 :root {
     --background: #F4EBE2;
-    --content-text: black;
     --accent: #AA8878;
-    --header-text: black;
     --section-title-text: black;
+    --header-text: black;
     --subtext: #AA8878;
+    --content-text: black;
     --hovered-text: white;
+    --link-background-hover: #AA8878;
     --fontSizes-xs: 0.75rem;
     --fontSizes-sm: 0.875rem;
     --fontSizes-md: 1rem;
@@ -63,6 +64,10 @@ code {
     font-size: 16px;
 }
 
+b {
+    font-weight: 700;
+}
+
 /* ------------------ SECTION ------------------ */
 
 div#content div.section {
@@ -96,35 +101,24 @@ div#header div#summary b {
 
 /* ------------------ PROJECTS ------------------ */
 
-div#grid-projects {
-    display: grid;
-    grid-template-areas: "header content";
-    grid-template-columns: 2fr 3fr;
+.row {  
+    margin: auto;
+    display: flex;
+    flex: 100%;
+    gap: 2px;
 }
 
-div#grid-projects>#grid-header {
-    grid-area: header;
+.side {
+    flex: 30%;
 }
 
-div#grid-projects>#grid-content {
-    grid-area: content;
+.main {
+    flex: 70%;
 }
 
-/* ------------------ FAVORITES ------------------ */
+/* ------------------ SKILLS ------------------ */
 
-div#grid-favorites {
-    display: grid;
-    grid-template-areas: "header content";
-    grid-template-columns: 2fr 3fr;
-}
-
-div#grid-favorites#grid-header {
-    grid-area: header;
-}
-
-div#grid-favorites#grid-content {
-    grid-area: content;
-}
+/* TODO */
 
 /* ------------------ FOOTER ------------------ */
 
@@ -139,7 +133,7 @@ a:focus {
 a:hover {
     color: var(--hovered-text);
     cursor: pointer !important;
-    background-color: var(--accent);
+    background-color: var(--link-background-hover);
     text-decoration: none;
 }
 
@@ -149,5 +143,22 @@ a:hover {
     div#wrapper {
         padding: 1em;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    div#grid-projects {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "content";
+    }
+
+    div#grid-projects>#grid-header {
+        grid-area: header;
+    }
+
+    div#grid-projects>#grid-content {
+        grid-area: content;
     }
 }
