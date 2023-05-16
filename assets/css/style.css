@@ -13,7 +13,7 @@
 /* ------------------ GENERAL ------------------ */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     color: var(--content-text);
     background-color: var(--background);
@@ -70,7 +70,7 @@ div#content .section {
 /* ------------------ HEADER ------------------ */
 
 div#header intro {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 56px;
     font-weight: 500;
     color: var(--content-text);
@@ -93,13 +93,9 @@ div#header div#summary b {
     gap: 10vw;
 }
 
-.projects {
+.project {
     padding-top: 4em;
 }
-
-/* ------------------ SKILLS ------------------ */
-
-/* TODO */
 
 /* ------------------ FOOTER ------------------ */
 
@@ -108,7 +104,7 @@ a:focus {
     color: var(--accent);
     cursor: pointer !important;
     transition: 0.2s;
-    text-decoration: 2px dotted underline var(--accent);
+    text-decoration: 2px underline var(--accent);
     text-underline-position: under;
 }
 
