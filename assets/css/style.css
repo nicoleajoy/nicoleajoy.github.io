@@ -127,8 +127,8 @@ a:hover {
 }
 
 @media only screen and (max-width: 720px) {
-    body {
-        padding: 2em 0 1em 0;
+    div#content .section {
+        padding: 1em 0;
     }
     
     .row {
@@ -139,6 +139,6 @@ a:hover {
     }
     
     .side h2 {
-        margin-bottom: 2em;
+        padding-bottom: 1em;
     }
 }
