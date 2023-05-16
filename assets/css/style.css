@@ -4,19 +4,15 @@
 /* ----------------------------------------------- */
 
 :root {
-    --background: #F4EBE2;
-    --accent: #AA8878;
-    --section-title-text: black;
-    --header-text: black;
-    --subtext: #AA8878;
-    --content-text: black;
-    --hovered-text: white;
-    --link-background-hover: #AA8878;
+    --background: #EEEEEE;
+    --accent: #537188;
+    --content-text: #000;
+    --accent-alt: #CBB279;
     --fontSizes-xs: 0.75rem;
     --fontSizes-sm: 0.875rem;
     --fontSizes-md: 1rem;
-    --fontSizes-lg: 1.125rem;
-    --fontSizes-xl: 1.25rem;
+    --fontSizes-lg: 1.25rem;
+    --fontSizes-xl: 1.5rem;
 }
 
 /* ------------------ GENERAL ------------------ */
@@ -24,8 +20,7 @@
 body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Roboto Mono', monospace;
-    font-weight: 200;
-    font-size: 18px;
+    font-size: 14px;
     color: var(--content-text);
     background-color: var(--background);
     cursor: default;
@@ -46,7 +41,7 @@ body {
 
 div#wrapper {
     margin: auto;
-    width: 56rem;
+    width: 64em;
 }
 
 html {
@@ -54,45 +49,41 @@ html {
 }
 
 hr {
-    border: 1px dashed var(--content-text);
+    border: 1px solid var(--content-text);
 }
 
 code {
     font-family: 'Roboto Mono', monospace;
-    color: var(--subtext);
-    padding: 2px 8px;
     font-size: 16px;
+    color: var(--content-text);
+    padding: 2px 8px;
 }
 
 b {
     font-weight: 700;
 }
 
+accent {
+    color: var(--accent);
+}
+
 /* ------------------ SECTION ------------------ */
 
-div#content div.section {
-    padding: 2em 0;
+div#content .section {
+    padding: 4em 0;
 }
 
 /* ------------------ HEADER ------------------ */
 
-div.main-component>div#header {
-    display: flex;
-}
-
-body div#header intro {
+div#header intro {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 500;
     font-size: 56px;
-    color: var(--header-text);
-}
-
-div#header accent {
-    color: var(--accent);
+    font-weight: 500;
+    color: var(--content-text);
 }
 
 div#header div#summary {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 div#header div#summary b {
@@ -119,14 +110,15 @@ a:focus {
     color: var(--accent);
     cursor: pointer !important;
     transition: 0.25s;
-    text-decoration: underline;
+    text-decoration: 2px dotted underline var(--accent);
+    text-underline-position: under;
 }
 
 a:hover {
-    color: var(--hovered-text);
+    color: var(--accent-alt);
     cursor: pointer !important;
-    background-color: var(--link-background-hover);
-    text-decoration: none;
+    text-decoration: 2px underline var(--accent-alt);
+    text-underline-position: under;
 }
 
 /* ------------------ MEDIA ------------------ */
