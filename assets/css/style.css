@@ -18,9 +18,8 @@
 /* ------------------ GENERAL ------------------ */
 
 body {
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     color: var(--content-text);
     background-color: var(--background);
     cursor: default;
@@ -54,7 +53,7 @@ hr {
 
 code {
     font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--content-text);
     padding: 2px 8px;
 }
