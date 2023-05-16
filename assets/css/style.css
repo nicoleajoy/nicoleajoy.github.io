@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* ----------------------------------------------- */
@@ -12,94 +13,44 @@
 
 /* ------------------ GENERAL ------------------ */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Roboto Mono', monospace;
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: var(--content-text);
-    background-color: var(--background);
     cursor: default;
-    padding: 5em 0 2em 0;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab', serif;
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
 div#wrapper {
+    width: 56em;
     margin: auto;
-    width: 64em;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-hr {
-    border: 1px solid var(--content-text);
-}
-
-code {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
-    color: var(--content-text);
-    padding: 2px 8px;
-}
-
-b {
-    font-weight: 700;
-}
-
-accent {
-    color: var(--accent);
-}
-
-/* ------------------ SECTION ------------------ */
-
-div#content .section {
-    padding: 4em 0;
-}
-
-/* ------------------ HEADER ------------------ */
-
-div#header intro {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 56px;
-    font-weight: 500;
-    color: var(--content-text);
-}
-
-div#header div#summary {
-    font-size: 18px;
-}
-
-div#header div#summary b {
-    font-weight: 700;
-}
-
-/* ------------------ PROJECTS ------------------ */
-
-.row {  
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-/* ------------------ FOOTER ------------------ */
 
 a,
 a:focus {
@@ -117,9 +68,74 @@ a:hover {
     text-underline-position: under;
 }
 
+b {
+    font-weight: 700;
+}
+
+code {
+    padding: 2px 8px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: var(--content-text);
+}
+
+hr {
+    border: 1px solid var(--content-text);
+}
+
+accent {
+    color: var(--accent);
+}
+
+/* ------------------ SECTION ------------------ */
+
+.section {
+    padding: 4em 0;
+}
+
+/* ------------------ HEADER ------------------ */
+
+div#header h1 {
+    font-size: 56px;
+    color: var(--content-text);
+}
+
+div#header div#summary {
+    font-size: 18px;
+}
+
+/* ------------------ PROJECTS ------------------ */
+
+.flex-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+div p {
+    margin: 0;
+}
+
+/* ------------------ FOOTER ------------------ */
+
+div#footer {
+    padding: 0 0 4em 0;
+}
+
 /* ------------------ MEDIA ------------------ */
 
 @media only screen and (max-width: 1080px) {
+    div#header h1 {
+        font-size: 48px;
+    }
+
     div#wrapper {
         padding: 1em;
         width: 100%;
@@ -127,18 +143,14 @@ a:hover {
 }
 
 @media only screen and (max-width: 720px) {
-    div#content .section {
-        padding: 1em 0;
-    }
-    
-    .row {
+    .flex-container {
         margin: auto;
         display: flex;
         flex-direction: column;
         gap: 0;
     }
-    
-    .side h2 {
-        padding-bottom: 1em;
+
+    .flex-title {
+        padding-bottom: 2em;
     }
 }
