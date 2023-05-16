@@ -93,6 +93,12 @@ div#header div#summary b {
     gap: 10vw;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .project {
     padding-top: 2em;
 }
