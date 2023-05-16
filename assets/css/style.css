@@ -4,10 +4,10 @@
 /* ----------------------------------------------- */
 
 :root {
-    --background: #EEEEEE;
-    --accent: #537188;
-    --content-text: #000;
-    --accent-alt: #CBB279;
+    --background: #fafafa;
+    --accent: #99b2dd;
+    --content-text: #1a1a1a;
+    --accent-alt: #e9afa3;
     --fontSizes-xs: 0.75rem;
     --fontSizes-sm: 0.875rem;
     --fontSizes-md: 1rem;
@@ -109,7 +109,7 @@ a,
 a:focus {
     color: var(--accent);
     cursor: pointer !important;
-    transition: 0.25s;
+    transition: 0.2s;
     text-decoration: 2px dotted underline var(--accent);
     text-underline-position: under;
 }
@@ -131,7 +131,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 720px) {
-    .row {  
+    .row {
         margin: auto;
         display: flex;
         flex-direction: column;
