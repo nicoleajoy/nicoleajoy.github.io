@@ -141,4 +141,8 @@ a:hover {
         flex-direction: column;
         gap: 0;
     }
+    
+    .side h2 {
+        margin-bottom: 2em;
+    }
 }
