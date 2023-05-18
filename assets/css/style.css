@@ -5,11 +5,11 @@
 /* ----------------------------------------------- */
 
 :root {
-    --background: #fafafa;
-    --accent: #99b2dd;
-    --content-text: #1a1a1a;
-    --content-text-transparent: #1a1a1a33;
-    --accent-alt: #e9afa3;
+    --background: #FAFAFA;
+    --accent: #E0B1CB;
+    --accent-alt: #5E548E;
+    --content-text: #1A1A1A;
+    --content-text-transparent: #1A1A1A33;
 }
 
 /* ------------------ GENERAL ------------------ */
@@ -129,7 +129,7 @@ div p {
 
 div#footer {
     padding: 0 0 4em 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* ------------------ MEDIA ------------------ */
