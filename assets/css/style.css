@@ -8,6 +8,7 @@
     --background: #fafafa;
     --accent: #99b2dd;
     --content-text: #1a1a1a;
+    --content-text-transparent: #1a1a1a11;
     --accent-alt: #e9afa3;
 }
 
@@ -20,10 +21,10 @@ html {
 body {
     background-color: var(--background);
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--content-text);
     cursor: default;
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 0.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -48,7 +49,7 @@ h6 {
 }
 
 div#wrapper {
-    width: 56em;
+    width: 52em;
     margin: auto;
 }
 
@@ -75,12 +76,12 @@ b {
 code {
     padding: 2px 8px;
     font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--content-text);
 }
 
 hr {
-    border: 1px solid var(--content-text);
+    border: 1px dashed var(--content-text-transparent);
 }
 
 accent {
@@ -98,10 +99,11 @@ accent {
 div#header h1 {
     font-size: 56px;
     color: var(--content-text);
+    padding-top: 75px;
 }
 
 div#header div#summary {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /* ------------------ PROJECTS ------------------ */
@@ -110,7 +112,7 @@ div#header div#summary {
     margin: auto;
     display: flex;
     flex-direction: row;
-    gap: 10em;
+    gap: 25%;
 }
 
 .flex-main {
@@ -127,22 +129,28 @@ div p {
 
 div#footer {
     padding: 0 0 4em 0;
+    font-size: 14px;
 }
 
 /* ------------------ MEDIA ------------------ */
 
 @media only screen and (max-width: 1080px) {
-    div#header h1 {
-        font-size: 42px;
-    }
-
     div#wrapper {
         padding: 1em;
-        width: 100%;
+        width: 80%;
+    }
+
+    div#header h1 {
+        font-size: 42px;
     }
 }
 
 @media only screen and (max-width: 720px) {
+    div#wrapper {
+        padding: 1em;
+        width: 100%;
+    }
+
     .flex-container {
         margin: auto;
         display: flex;
