@@ -5,11 +5,11 @@
 /* ----------------------------------------------- */
 
 :root {
-    --background: #fafafa;
-    --accent: #99b2dd;
-    --content-text: #1a1a1a;
+    --background: #fbfefb;
+    --accent: #e21257;
+    --content-text: #191921;
     --content-text-transparent: #1a1a1a33;
-    --accent-alt: #e9afa3;
+    --accent-alt: #910a37;
 }
 
 /* ------------------ GENERAL ------------------ */
@@ -58,14 +58,14 @@ a:focus {
     color: var(--accent);
     cursor: pointer !important;
     transition: 0.2s;
-    text-decoration: 2px underline var(--accent);
+    text-decoration: 1px wavy underline var(--accent);
     text-underline-position: under;
 }
 
 a:hover {
     color: var(--accent-alt);
     cursor: pointer !important;
-    text-decoration: 2px underline var(--accent-alt);
+    text-decoration: 1px wavy underline var(--accent-alt);
     text-underline-position: under;
 }
 
