@@ -5,11 +5,21 @@
 /* ----------------------------------------------- */
 
 :root {
-    --background: #fbfefb;
-    --accent: #e21257;
+    --background: #FBFEFB;
+    --accent: #DA103F;
+    --accent-alt: #F77D26;
     --content-text: #191921;
-    --content-text-transparent: #1a1a1a33;
-    --accent-alt: #910a37;
+    --content-text-transparent: #19192133;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #1A1C23;
+        --accent: #E95678;
+        --accent-alt: #F09383;
+        --content-text: #FBFEFB;
+        --content-text-transparent: #FBFEFB33;
+    }
 }
 
 /* ------------------ GENERAL ------------------ */
