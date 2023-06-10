@@ -29,7 +29,7 @@ html {
 body {
     background-color: var(--background);
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 1.125em;
     color: var(--content-text);
     cursor: default;
     animation: fadeInAnimation ease 0.5s;
@@ -54,7 +54,7 @@ h4,
 h5,
 h6,
 p {
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 p {
@@ -83,14 +83,14 @@ a:hover {
 /* ------------------ WRAPPER ------------------ */
 
 div#wrapper {
-    width: 48em;
+    width: 56em;
     margin: auto;
 }
 
 /* ------------------ SECTIONS ------------------ */
 
 .section {
-    padding: 4em 0;
+    padding: 2.5em 0;
 }
 
 div#header {
@@ -117,7 +117,7 @@ div#header {
 }
 
 div#footer {
-    font-size: 16px;
+    font-size: 0.8em;
 }
 
 /* ------------------ MEDIA ------------------ */
