@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* ----------------------------------------------- */
 
 :root {
-    --background: #fff8f6;
-    --accent: #DA103F;
-    --accent-alt: #F77D26;
-    --content-text: #1A1C23;
-    --content-text-transparent: #19192133;
+    --background: #FFFFFF;
+    --link: #222222;
+    --link-hover: plum;
+    --content-text: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #1A1C23;
-        --accent: #E95678;
-        --accent-alt: #F09383;
-        --content-text: #FBFEFB;
-        --content-text-transparent: #FBFEFB33;
+        --background: #222222;
+        --link: #eeeeee;
+        --link-hover: plum;
+        --content-text: #FFFFFF;
     }
 }
 
@@ -30,22 +28,13 @@ html {
 
 body {
     background-color: var(--background);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Sans-serif;
     font-size: 18px;
     color: var(--content-text);
     cursor: default;
-    animation: fadeInAnimation ease 0.25s;
+    animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto Slab', serif;
 }
 
 @keyframes fadeInAnimation {
@@ -58,29 +47,37 @@ h6 {
     }
 }
 
-div#wrapper {
-    width: 52em;
-    margin: auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-a,
-a:focus {
-    color: var(--accent);
-    cursor: pointer !important;
-    transition: 0.2s;
-    text-decoration: 1px wavy underline var(--accent);
-    text-underline-position: under;
-}
-
-a:hover {
-    color: var(--accent-alt);
-    cursor: pointer !important;
-    text-decoration: 1px wavy underline var(--accent-alt);
-    text-underline-position: under;
+p {
+    margin: 0;
 }
 
 b {
     font-weight: 700;
+}
+
+a,
+a:focus {
+    color: var(--link);
+    cursor: pointer !important;
+    transition: 0.2s;
+    text-decoration: 1px underline var(--link);
+    text-underline-position: under;
+}
+
+a:hover {
+    color: var(--link-hover);
+    cursor: pointer !important;
+    text-decoration: 1px underline var(--link-hover);
+    text-underline-position: under;
 }
 
 code {
@@ -91,29 +88,20 @@ code {
 }
 
 hr {
-    border: 1px dashed var(--content-text-transparent);
+    border: 1px solid var(--content-text);
 }
 
-accent {
-    color: var(--accent);
+/* ------------------ WRAPPER ------------------ */
+
+div#wrapper {
+    width: 42em;
+    margin: auto;
 }
 
 /* ------------------ SECTION ------------------ */
 
 .section {
     padding: 4em 0;
-}
-
-/* ------------------ HEADER ------------------ */
-
-div#header h1 {
-    font-size: 56px;
-    color: var(--content-text);
-    padding-top: 75px;
-}
-
-div#header div#summary {
-    font-size: 22px;
 }
 
 /* ------------------ PROJECTS ------------------ */
@@ -131,27 +119,12 @@ div#header div#summary {
     gap: 2em;
 }
 
-div p {
-    margin: 0;
-}
-
-/* ------------------ FOOTER ------------------ */
-
-div#footer {
-    padding: 0 0 4em 0;
-    font-size: 16px;
-}
-
 /* ------------------ MEDIA ------------------ */
 
 @media only screen and (max-width: 1080px) {
     div#wrapper {
         padding: 1em;
         width: 80%;
-    }
-
-    div#header h1 {
-        font-size: 42px;
     }
 }
 
