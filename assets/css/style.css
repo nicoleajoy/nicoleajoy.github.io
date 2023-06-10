@@ -149,8 +149,4 @@ div#footer {
         flex-direction: column;
         gap: 0;
     }
-
-    .flex-title {
-        padding-bottom: 2em;
-    }
 }
