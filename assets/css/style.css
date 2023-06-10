@@ -93,6 +93,10 @@ div#wrapper {
     padding: 4em 0;
 }
 
+div#header {
+    font-size: 2em;
+}
+
 .flex-container {
     margin: auto;
     display: flex;
@@ -112,6 +116,10 @@ div#wrapper {
     flex: 1 1;
 }
 
+div#footer {
+    font-size: 16px;
+}
+
 /* ------------------ MEDIA ------------------ */
 
 @media only screen and (max-width: 1080px) {
@@ -119,12 +127,20 @@ div#wrapper {
         padding: 1em;
         width: 80%;
     }
+
+    div#header {
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 720px) {
     div#wrapper {
         padding: 1em;
         width: 100%;
+    }
+
+    div#header {
+        font-size: 1.25em;
     }
 
     .flex-container {
