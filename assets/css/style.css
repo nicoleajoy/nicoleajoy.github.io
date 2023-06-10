@@ -68,9 +68,11 @@ a:focus {
     cursor: pointer !important;
     transition: 0.2s;
     text-decoration: underline var(--link);
-    -webkit-text-decoration: underline var(--link);
     text-underline-position: under;
-    -webkit-underline-position: under;
+    -webkit-text-decoration-line: underline !important;
+    -webkit-text-decoration-color: var(--link) !important;
+    -webkit-text-decoration-style: solid !important;
+    -webkit-text-decoration-thickness: 1px !important;
 }
 
 a:hover {
