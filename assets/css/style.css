@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 /* ----------------------------------------------- */
 
@@ -28,7 +27,7 @@ html {
 
 body {
     background-color: var(--background);
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 18px;
     color: var(--content-text);
     cursor: default;
