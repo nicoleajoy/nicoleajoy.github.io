@@ -78,6 +78,7 @@ a:focus {
 a:hover {
     color: var(--link-hover);
     cursor: pointer !important;
+    -webkit-text-decoration-color: var(--link-hover) !important;
 }
 
 code {
