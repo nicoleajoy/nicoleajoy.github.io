@@ -11,11 +11,6 @@
     --content-text: #000000;
 }
 
-::selection {
-    background: plum;
-    color: #000000;
-}
-
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #111111;
@@ -23,6 +18,11 @@
         --link-hover: plum;
         --content-text: #FFFFFF;
     }
+}
+
+::selection {
+    background: plum;
+    color: var(--content-text);
 }
 
 /* ------------------ GENERAL ------------------ */
@@ -82,7 +82,18 @@ a:focus {
 a:hover {
     color: var(--link-hover);
     cursor: pointer !important;
+    transition: 0.2s;
+    text-decoration: underline var(--link-hover);
+    text-underline-position: under;
+    -webkit-text-decoration-line: underline !important;
     -webkit-text-decoration-color: var(--link-hover) !important;
+    -webkit-text-decoration-style: solid !important;
+    -webkit-text-decoration-thickness: 1px !important;
+}
+
+a:active {
+    background: var(--link-hover);
+    color: var(--content-text);
 }
 
 /* ------------------ WRAPPER ------------------ */
