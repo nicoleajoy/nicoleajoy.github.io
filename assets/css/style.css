@@ -80,10 +80,6 @@ a:hover {
     -webkit-text-decoration-color: var(--link-hover) !important;
 }
 
-hr {
-    border: 1px solid var(--content-text);
-}
-
 /* ------------------ WRAPPER ------------------ */
 
 div#wrapper {
@@ -100,18 +96,20 @@ div#wrapper {
 .flex-container {
     margin: auto;
     display: flex;
-    flex-direction: row;
-    gap: 25%;
+    flex-direction: column;
 }
 
-.flex-main {
+.flex-item {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    /* border-top: solid 1px black;
+    border-bottom: solid 1px black; */
+    padding: 1em 0;
+    flex-wrap: wrap;
 }
 
-div#footer {
-    font-size: 14px;
+.flex-item > * {
+    flex: 1 1;
 }
 
 /* ------------------ MEDIA ------------------ */
