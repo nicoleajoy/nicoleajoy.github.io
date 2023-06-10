@@ -11,6 +11,11 @@
     --content-text: #000000;
 }
 
+::selection {
+    background: plum;
+    color: #000000;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #111111;
@@ -90,7 +95,7 @@ div#wrapper {
 /* ------------------ SECTIONS ------------------ */
 
 .section {
-    padding: 2.5em 0;
+    padding: 4em 0;
 }
 
 div#header {
@@ -108,7 +113,7 @@ div#header {
     flex-direction: column;
     /* border-top: solid 1px black;
     border-bottom: solid 1px black; */
-    padding: 1em 0;
+    padding: 0.5em 0;
     flex-wrap: wrap;
 }
 

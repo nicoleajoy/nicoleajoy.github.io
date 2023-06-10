@@ -1,3 +1,3 @@
-# Personal Website
+# Portfolio
 
-Just a place where I share some stuff about me.
+Welcome to my corner of the world wide web.
