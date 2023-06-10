@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap');
+/* ------------------ FONTS ------------------ */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 /* ----------------------------------------------- */
@@ -12,7 +13,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #222222;
+        --background: #111111;
         --link: #eeeeee;
         --link-hover: plum;
         --content-text: #FFFFFF;
@@ -77,13 +78,6 @@ a:hover {
     color: var(--link-hover);
     cursor: pointer !important;
     -webkit-text-decoration-color: var(--link-hover) !important;
-}
-
-code {
-    padding: 2px 8px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
-    color: var(--content-text);
 }
 
 hr {
