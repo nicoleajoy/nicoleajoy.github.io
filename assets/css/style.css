@@ -143,17 +143,17 @@ div#footer {
 /* ------------------ MEDIA ------------------ */
 
 @media only screen and (max-width: 1280px) {
-    div#header {
-        font-size: 1.5em;
-    }
-
     div#wrapper {
         padding: 2em;
         width: 100%;
     }
+    
+    div#header {
+        font-size: 1.5em;
+    }
 
     div#footer {
-        padding: 0;
+        padding-bottom: 1em;
     }
 }
 
