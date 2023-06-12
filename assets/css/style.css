@@ -5,24 +5,24 @@
 /* ----------------------------------------------- */
 
 :root {
-    --background: #FFFFFF;
+    --bg: #ffffff;
+    --accent: #bacbe5;
+    --text: #000000;
     --link: #222222;
-    --link-hover: plum;
-    --content-text: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #111111;
+        --bg: #111111;
+        --accent: #bacbe5;
+        --text: #ffffff;
         --link: #eeeeee;
-        --link-hover: plum;
-        --content-text: #FFFFFF;
     }
 }
 
 ::selection {
-    background: plum;
-    color: var(--content-text);
+    background: var(--accent);
+    color: var(--bg);
 }
 
 /* ------------------ GENERAL ------------------ */
@@ -32,10 +32,10 @@ html {
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--bg);
     font-family: 'Playfair Display', serif;
-    font-size: 1.125em;
-    color: var(--content-text);
+    font-size: 1.2em;
+    color: var(--text);
     cursor: default;
     animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
@@ -59,7 +59,7 @@ h4,
 h5,
 h6,
 p {
-    font-size: 1.125em;
+    font-size: 1.2em;
 }
 
 p {
@@ -80,20 +80,20 @@ a:focus {
 }
 
 a:hover {
-    color: var(--link-hover);
+    color: var(--accent);
     cursor: pointer !important;
     transition: 0.2s;
-    text-decoration: underline var(--link-hover);
+    text-decoration: underline var(--accent);
     text-underline-position: under;
     -webkit-text-decoration-line: underline !important;
-    -webkit-text-decoration-color: var(--link-hover) !important;
+    -webkit-text-decoration-color: var(--accent) !important;
     -webkit-text-decoration-style: solid !important;
     -webkit-text-decoration-thickness: 1px !important;
 }
 
 a:active {
-    background: var(--link-hover);
-    color: var(--content-text);
+    background: var(--accent);
+    color: var(--text);
 }
 
 /* ------------------ WRAPPER ------------------ */
@@ -103,14 +103,16 @@ div#wrapper {
     margin: auto;
 }
 
+/* ------------------ HEADER ------------------ */
+
+div#header {
+    font-size: 1.75em;
+}
+
 /* ------------------ SECTIONS ------------------ */
 
 .section {
     padding: 4em 0;
-}
-
-div#header {
-    font-size: 2em;
 }
 
 .flex-container {
@@ -132,24 +134,44 @@ div#header {
     flex: 1 1;
 }
 
+/* ------------------ FOOTER ------------------ */
+
 div#footer {
     font-size: 0.8em;
 }
 
 /* ------------------ MEDIA ------------------ */
 
-@media only screen and (max-width: 1080px) {
-    div#wrapper {
-        padding: 1em;
-        width: 80%;
-    }
-
+@media only screen and (max-width: 1280px) {
     div#header {
         font-size: 1.5em;
     }
+
+    div#wrapper {
+        padding: 2em;
+        width: 100%;
+    }
+
+    div#footer {
+        padding: 0;
+    }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 1em;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-size: 1em;
+    }
+
     div#wrapper {
         padding: 1em;
         width: 100%;
