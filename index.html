@@ -1,65 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Nicole Ajoy</title>  
-  <meta content="text/html; charset=UTF-8" name="Content-Type" />
-  <meta property="og:title" content="Nicole Ajoy">
-  <meta property="og:description" content="Engineer">
-  <meta name="viewport" content="width=device-width" />
-  <link rel="icon" href="assets/icons/favicon.ico" sizes="256x256">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Nicole Ajoy</title>
+    <meta name="description" content="I’m Nicole Ajoy, an engineer and designer based in California.">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGB7NQPJ1T"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VGB7NQPJ1T');
+</script>
+
 <body>
+    <header>
+        <h1>Nicole Ajoy</h1>
+        <a href="mailto:nicoleajoy@gmail.com" target="_blank" rel="noopener noreferrer">Let&#8217;s chat</a>
+    </header>
+    <main>
+        <section>
+            <h2>Hello, I’m a 👩🏻‍💻 Software Engineer and 🎨 2D/3D Designer based in ☀️ California. I earned my 📜 Bachelor of Science in Digital Art and am currently studying for my 🎓 Master of Science in Computer Science, specializing in 🤖 artificial intelligence.</h2>
+        </section>
+    </main>
+    <article>
+        <section class="previews">
+            <!-- <div id="one">
+                <h1>Case study</h1>
+                <img src="./images/image.png" alt="Image">
+                <h3>Title</h3>
+                <p>Description goes here.</p>
+                <a href="https://www.behance.net/gallery/117261127/Revenge-of-the-Roomba" target="_blank" rel="noopener noreferrer">Behance &#8599;</a>
+            </div>
+            <div id="two">
+                <h1>Sample work</h1>
+                <h3>Title</h3>
+                <p>Description goes here.</p>
+                <img src="./images/image.png" alt="Image">
+            </div>
+            <div id="three">
+                <h3>Title</h3>
+                <p>Description goes here.</p>
+                <img src="./images/image.png" alt="Image">
+            </div>
+            <div id="four">
+                <h3>Title</h3>
+                <p>Description goes here.</p>
+                <img src="./images/image.png" alt="Image">
+            </div>
+            <div id="five">
+                <h3>Title</h3>
+                <p>Description goes here.</p>
+                <span>
+                    <img src="./images/image.png" alt="Image">
+                </span>
+            </div>
+            <div id="six">
+                <h3>Title</h3>
+                <p>Description goes here.</p>
+                <img src="./images/image.png" alt="Image">
+            </div>
+            <div id="seven">
+                <h3>Title</h3>
+                <p>Description goes here.</p>
+                <img src="./images/image.jpg" alt="Image">
+            </div> -->
+            <div id="eight">
+            <h1>Miscellaneous</h1>
+            <ul>
+                <li><p><strong>Currently reading:</strong></p></li>
+                <li><p>"Nobody Cares About Your Career" ⎯Erika Ayers Badman</p></li>
+            </ul>
+            <ul>
+                <li><p><strong>Currently watching:</strong></p></li>
+                <li><p>"House of the Dragon"</p></li>
+                <li><p>"Rick and Morty"</p></li>
+            </ul>
+            </div>
+        </section>
+    </article>
     
-<header>
-  <h1>nicole ajoy*</h1>
-</header>
-<p>DevOps Engineer (and Digital Artist at heart).</p>
-<p>
-  My coding journey began at the <a href="http://ufl.edu/" target="_blank">University of Florida</a>, where I earned my Bachelor of Science in Digital Art.
-  Currently pursuing my Master of Science in Computer Science at <a href="http://gatech.edu/" target="_blank">Georgia Tech</a>.
-</p>
+    <footer>
+        <nav>
+            <ul class="socials">
+                <li><a href="https://linkedin.com/in/nicoleajoy" target="_blank" rel="noopener noreferrer" aria-label="Visit Nicole Ajoy on LinkedIn">LinkedIn &#8599;</a></li>
+                <li><a href="https://github.com/nicoleajoy" target="_blank" rel="noopener noreferrer" aria-label="Visit Nicole Ajoy on GitHub">GitHub &#8599;</a></li>
+            </ul>
+            <address>
+                <a href="mailto:nicoleajoy@gmail.com" aria-label="Email Nicole Ajoy">nicoleajoy@gmail.com</a><br>
+                <a href="tel:+14045654816" aria-label="Call Nicole Ajoy">+1 404 565 4816</a>
+            </address>
+            <p>Thanks for scrolling. 😊</p>
+        </nav>
+    </footer>
+    
+    <script>
+        document.addEventListener("scroll", function() {
+            const targetElements = [
+                { id: "one", color: "#DFE8E6" },
+                { id: "two", color: "#F2E5F9" },
+                { id: "three", color: "#E9E9EF" },
+                { id: "four", color: "#F7E2E7" },
+                { id: "five", color: "#DFF3EA" },
+                { id: "six", color: "#F6EADF" },
+                { id: "seven", color: "#D8EAE0" },
+                { id: "eight", color: "#F6F4ED" }
+            ];
 
-<hr />
+            let currentColor = "#F6F4ED";
 
-<h2>Projects</h2>
-<p>
-  <a class="post-link" href="https://www.behance.net/gallery/117261127/Revenge-of-the-Roomba">> Revenge of the Roomba</a> (Unity, C#).
-  Play as a robot seeking chaos at home in this 3D sandbox game.
-</p>
+            for (let i = 0; i < targetElements.length; i++) {
+                const targetElement = document.getElementById(targetElements[i].id);
+                const targetPosition = targetElement.getBoundingClientRect().top;
 
-<p>
-  <a class="post-link" href="https://github.com/nicoleajoy/CG-Robot-Arm">> Robot Arm</a> (OpenGL, C++).
-  Explore vectors and matrices in a 3D space using an interactive robot arm.
-</p>
+                if (targetPosition <= 240) {
+                    currentColor = targetElements[i].color;
+                }
+            }
 
-<p>
-  <a class="post-link" href="https://editor.p5js.org/nicoleajoy/collections/SXGcth4qq">> Cursor Variations</a> (JavaScript).
-  A target acquisition game that compares the efficiency of different cursors.
-</p>
-
-<p>
-  <a class="post-link" href="https://github.com/nicoleajoy/Sushi-Rush">> Sushi Rush</a> (Processing).
-  Help a cat prepare a sushi dish, using power-ups and avoiding hazards.
-</made>
-
-<p>
-  <a class="post-link" href="https://github.com/nicoleajoy/Prolog-Type-Inference">> Prolog Type Inference</a> (Prolog, Haskell).
-    An algorithm that infers types for functions and variables.
-</p>
-
-<p>
-  <a class="post-link" href="https://drive.google.com/file/d/1tPHP85-7Z5RDVdpvWyGNP2WtZwc4O3qp/view?usp=sharing">> Hiraeth</a> (Unity, C#).
-  Help Elenora reach the top of Mount Milagro in a 2D platform adventure.
-</p>
-
-<hr />
-
-<footer>
-  <p><a href="https://linkedin.com/in/nicoleajoy">LinkedIn</a> | <a href="https://github.com/nicoleajoy">GitHub</a></p>
-</footer>
-
+            document.body.style.backgroundColor = currentColor;
+        });
+    </script>
 </body>
 </html>
