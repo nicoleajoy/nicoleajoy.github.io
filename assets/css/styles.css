@@ -461,14 +461,14 @@ header a:active {
 }
   
   
-/* Mobile Styles */
+/* Mobile */
 @media screen and (max-width: 600px) {
     body {
         padding: 20px 20px;
     }
 }
 
-/* Tablet Styles */
+/* Tablet */
 @media screen and (min-width: 601px) and (max-width: 900px) {
     body {
         padding: 30px 20px;
