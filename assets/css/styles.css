@@ -70,6 +70,10 @@
     -webkit-text-size-adjust: none;
 }
 
+html {
+    background: #F6F4ED;
+}
+
 nav,
 article,
 footer {
