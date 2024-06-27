@@ -39,6 +39,22 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: "Bouquet";
+    src: url("../fonts/Bouquet.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "OutfitRegular";
+    src: url("../fonts/Outfit-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -66,6 +82,18 @@ body {
     background: #F6F4ED;
     color: #405647;
     transition: background-color 0.5s;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 h2,
