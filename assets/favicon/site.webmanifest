@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Nicole Ajoy",
+    "short_name": "Coco",
     "icons": [
         {
             "src": "./android-chrome-192x192.png",
@@ -8,7 +8,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#ffc300",
+    "background_color": "#ffc300",
     "display": "standalone"
 }
